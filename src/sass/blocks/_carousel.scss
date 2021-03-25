@@ -1,0 +1,45 @@
+.carousel-promo{
+    position: relative;
+    /* overflow: hidden; */
+    margin-bottom: 56px;
+    padding: 0 6px;
+    min-height: 305px;
+    min-width: 0;
+    &__subtitle{
+        font-size: 100px;
+        font-weight: 900;
+        text-align: left;
+        color: #ffffff;
+        line-height: 1.1;
+        margin-bottom: 49px;
+    }
+    &__descr{
+        font-size: 18px;
+        font-weight: 500;
+        text-align: left;
+        color: #a8a8a8;
+        line-height: 1.5;
+    }
+    .slick-slide:active, .slick-slide:focus {
+        outline: none;
+    }
+    .slick-prev,.slick-next{
+        position: absolute;
+        left: -80px;
+        top: 111px;
+        background:none;
+        border: none;
+        img{
+            width: 35px;
+            height: 25px;
+            object-fit: contain;
+            
+        }
+        
+    }
+    .slick-next{
+        left: 1585px;
+        top: 111px;
+
+    }
+}

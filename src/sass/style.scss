@@ -1,5 +1,8 @@
 @import 'libs/bootstrap-reboot.min';
 @import 'blocks/fonts';
+@import 'base/variables';
+@import 'base/mixins';
+@import 'libs/slick';
 
 * {
     font-family: 'Gilroy';
@@ -19,3 +22,4 @@ p,h1,h3,h2{
 }
 
 @import 'blocks/promo';
+@import 'blocks/carousel';
