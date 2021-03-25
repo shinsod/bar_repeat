@@ -4,46 +4,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Portfolio</title>
-    <meta name="title" content="Мое портфолио">
-    <meta name="description" content="Здесь вы сможете ознакомиться с моими работами и узнать больше обо мне">
-
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://metatags.io/">
-    <meta property="og:title" content="Мое портфолио">
-    <meta property="og:description" content="Здесь вы сможете ознакомиться с моими работами и узнать больше обо мне">
-    <meta property="og:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
-
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://metatags.io/">
-    <meta property="twitter:title" content="Мое портфолио">
-    <meta property="twitter:description" content="Здесь вы сможете ознакомиться с моими работами и узнать больше обо мне">
-    <meta property="twitter:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
-
-    <!-- Favicon  -->
-    <link rel="apple-touch-icon" sizes="57x57" href="icons/favicon//apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="icons/favicon//apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="icons/favicon//apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="icons/favicon//apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="icons/favicon//apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="icons/favicon//apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="icons/favicon//apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="icons/favicon//apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="icons/favicon//apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="icons/favicon//android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon//favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="icons/favicon//favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon//favicon-16x16.png">
-    <link rel="manifest" href="icons/favicon//manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="icons/favicon//ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
+    <title>barber</title>
+    <meta name="title" content="Barber">
+    <meta name="description" content="#">
 
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
+
+    <section class="promo">
+        <div class="container">
+            <div class="header promo__header">
+                <a href="" class="header__logo">
+                    <img src="icons/header/logo.png" alt="" class="header__logo-img">
+                    <div class="header__logo-descr">
+                        Barberclub <br>
+                        <span>мужская парикмахерская</span>
+                    </div>
+                </a>
+                <div class="header__wrapper">
+                    <div class="header__address">
+                        Москва <br>
+                        <span>Богдановича 66</span>
+                    </div>
+                    <a href="tel:+79831234567"  class="header__phone">
+                        + 7 (983) 123 45 67 <br>
+                        <span>по Москве и МО</span>
+                    </a>
+                </div>
+            </div>
+            <nav class="menu promo__menu">
+                <ul class="menu__list">
+                    <li class="menu__item"><a href="#">Услуги и цены</a></li>
+                    <li class="menu__item"><a href="#">Барберы</a></li>
+                    <li class="menu__item"><a href="#">Фотогалерея</a></li>
+                    <li class="menu__item"><a href="#">О нас</a></li>
+                    <li class="menu__item"><a href="#">Отзывы</a></li>
+                    <li class="menu__item"><a href="#">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="promo__wrapper">
+                <div class="promo__left">
+                    <div class="carousel-promo">
+                        <div class="carousel-promo__item">
+                            <h1 class="carousel-promo__title">Парикмахерская</h1>
+                            <h2 class="carousel-promo__subtitle">Для брутальных мужчин</h2>
+                            <div class="carousel-promo__descr">Барбершоп Barberclub - это место, где каждый <br> мужчина может приятно провести свободное время</div>
+                        </div>
+                    </div>
+                    <button class="btn">записаться <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="12" viewBox="0 0 16 12">
+                        <image id="arrow-pointing-to-right" width="16" height="12" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAMCAYAAABr5z2BAAAAjElEQVQokZ3QMQ5BURCF4Y9oRam0AaVYAr1G8RKlzhJU1mADEoUlsARR2oAl2IFMIZH3bnHHKSfz/zkzve1qriJD7HDE+3e9X0NjggNuGP0jeGKDWVtSK4icS5KMoCgZ4IJxUhSPjO9fsw06iQbrJNPghDuW2QZf+IFFnJIRdOAY1gqmJTgjeGHfhuEDTRYbD+qvA7MAAAAASUVORK5CYII="/>
+                      </svg>
+                    </button>
+                    <div class="promo__courent">
+                        
+                    </div>
+                </div>
+                <div class="promo__right">
+                    <a href="" class="play">
+                        <img src="img/promo/play_job.png" alt="" class="play__img">
+                        <div class="play__descr">Посмотреть процесс стрижки</div>
+                    </a>
+                    <div class="promo__social">
+                        <a href="#" class="promo__social-link">Facebook</a>
+                        <a href="#" class="promo__social-link">VK</a>
+                        <a href="#" class="promo__social-link">Instagram</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
 
     <script src="js/script.js"></script>
 </body>

@@ -1,0 +1,165 @@
+.promo{
+    height: 976px;
+    padding: 67px 0;
+    background: url(../img/promo/promo-bg.png) center (center / cover ) no-repeat ;
+    &__header{
+        display: flex;
+        flex-direction: row;
+        height: 54px;
+        justify-content: space-between;
+    }
+    .header{
+
+        &__logo{
+            display: flex;
+            flex-direction: row;
+            width: 275px;
+            text-decoration: none;
+
+            &-img{
+                width: 54px;
+                height: 54px;
+                object-fit: contain;
+            }
+            &-descr{
+                display: block;
+                font-size: 24px;
+                font-weight: 900;
+                color: #ffffff;
+                font-style: normal;
+                line-height: 1.25;
+                margin-left: 20px;
+                span{
+                    font-size: 16px;
+                    font-weight: bold;
+                    color: #a8a8a8;
+                }
+            }
+
+        }
+        &__wrapper{
+            width: 495px;
+            display: flex;
+            justify-content: space-between;
+        }
+        &__address{
+            position: relative;
+            text-align: right;
+            font-size: 24px;
+            font-weight: 900;
+            color: #ffffff;
+            line-height: 1.15;
+            ::before{
+                content: '';
+                position: absolute;
+                background-image: url(../icons/header/adress.png);
+                height: 32px;
+                width: 25px;
+                left: -10px;
+                top: -7px;
+            }
+            span{
+                font-size: 16px;
+                font-weight: bold;
+                color: #fcd977;
+            }
+        }
+        &__phone{
+            position: relative;
+            width: 200px;
+            text-align: right;
+            font-size: 24px;
+            font-weight: 900;
+            color: #ffffff;
+            line-height: 1.15;
+            text-decoration: none;
+            :before{
+                content: '';
+                position: absolute;
+                background-image:url(../icons/header/tel.png);
+                width: 25px;
+                height: 25px;
+                left: -34px;
+                top: 0;
+
+            }
+            span{
+                font-size: 16px;
+                font-weight: bold;
+                color: #fcd977;
+            }
+        }
+    }
+    .menu{
+        margin-top: 62px;
+        height: 17px;
+        &__list{
+            display: flex;
+            flex-direction: row;
+            list-style-type: none;
+            li{
+                margin-right: 45px;
+                font-size: 18px;
+                font-weight: bold;
+                color: #ffffff;
+                a{
+                    text-decoration: none;
+                    color: #ffffff;
+                }
+                
+            }
+        }
+       
+    }
+    &__wrapper{
+        margin-top: 100px;
+        display: flex;
+        .promo__left{
+            width: 50%;
+        }
+        .promo__right{
+            position: relative;
+            width: 50%;
+            display: flex;
+            justify-content: flex-end;
+            .play{
+                margin-top: 176px;
+                display: flex;
+                width: 295px;
+                height: 135px;
+                align-items: center;
+                justify-content: space-between;
+                text-decoration: none;
+                &__img{
+                    width: 120px;
+                    height: 135px;
+                    object-fit: contain;
+                    margin-right: 17px;
+                }
+                &__descr{
+                    font-size: 16px;
+                    font-weight: bold;
+                    line-height: normal;
+                    color: #ffffff;
+                }
+            }
+            .promo__social{
+                width: 170px;
+                height: 12px;
+                display: flex;
+                justify-content: space-between;
+                position: absolute;
+                transform: rotate(90deg);
+                bottom: -197px;
+                right: -80px;
+                &-link{
+                    font-size: 12px;
+                    font-weight: 500;
+                    color: #a8a8a8;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+}
