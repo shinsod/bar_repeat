@@ -1,10 +1,10 @@
 .carousel-promo{
     position: relative;
     /* overflow: hidden; */
-    margin-bottom: 56px;
-    padding: 0 6px;
+    margin-bottom: 76px;
+    /* padding: 0 6px; */
     min-height: 305px;
-    min-width: 0;
+    
     &__subtitle{
         font-size: 100px;
         font-weight: 900;
@@ -42,4 +42,6 @@
         top: 111px;
 
     }
+    
 }
+

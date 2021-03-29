@@ -1,0 +1,20 @@
+.btn{
+    width: 260px;
+    height: 75px;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 1.31;
+    color: #665236;
+    border-radius: 6px;
+    background-image: linear-gradient(to top, #e4a94d, #fcd977);
+    border: none;
+    border-bottom: revert ;
+    border-width: 3px;
+    border-color: #fcd977;;
+    box-shadow: 0px 30px 90px 0 rgba(252, 217, 119, 0.3);
+    padding: 0 65px;
+    svg{
+        margin-left: 14px;
+    }
+    
+}

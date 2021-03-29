@@ -1,0 +1,120 @@
+@media (max-width: 1920px){
+    .container{
+        max-width: 1530px;
+    }
+}
+
+
+@media (max-width: 1600px){
+    .container{
+       max-width: 1140px;
+    }
+    .promo{
+        &__wrapper{
+            .promo__right{
+                display: none;
+            }
+            .promo__left{
+                .carousel-promo__subtitle{
+                    font-size: 72px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px){
+    .container{
+       max-width: 960px;
+    }
+    .promo{
+        &__wrapper{
+            .promo__left{
+                /* overflow: hidden; */
+                width: 70%;
+            }
+        }
+    }
+}
+
+@media (max-width: 992px){
+    .container{
+       max-width: 720px;
+    }
+    .promo{
+        background: url('../img/promo/promo-bg.png')no-repeat 60%/cover;
+        .cut{
+            display: none;
+        }
+        .header__wrapper{
+            width: 400px;
+        }
+        &__menu{
+            .menu__list{
+                justify-content: space-between;
+                .menu__item{
+                    margin-right: 0;
+                }
+            }
+        }
+        &__wrapper{
+            .promo__left{
+                width: 99%;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px){
+    .container{
+       max-width: 540px;
+    }
+    .promo{
+        background: url(../img/promo/promo-table.png) center (center / cover) no-repeat;
+        .header{
+            &__logo-descr{
+                font-size: 18px;
+                margin-left: 13px;
+                span{
+                    font-size: 13px;
+                }
+            }
+            &__wrapper{
+                width: 321px;
+                .header__address{
+                    font-size: 18px;
+                    span{
+                        font-size: 13px;
+                    }
+                }
+                .header__phone{
+                    font-size: 16px;
+                    width: 170px;
+                    :before{
+                        left: 0px;
+                        top: 0;
+                    }
+                    span{
+                        font-size: 13px;
+                    }
+                }
+            }
+            
+        }
+        .menu__list{
+            .menu__item{
+                font-size: 16px;
+            }
+        }
+    }
+    
+}
+
+@media (max-width: 576x){
+    .container{
+       width: 100%;
+       padding: 0 10px;
+    }
+}
+
+
