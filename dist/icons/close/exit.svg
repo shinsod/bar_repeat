@@ -1,0 +1,12 @@
+<svg id="exit" xmlns="http://www.w3.org/2000/svg" width="19.094" height="19.813" viewBox="0 0 19.094 19.813">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fcd977;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="Прямоугольник_506" data-name="Прямоугольник 506" class="cls-1" d="M288.278,29.6l1.414,1.414L272.015,48.692,270.6,47.277Z" transform="translate(-270.594 -29.594)"/>
+  <path id="Прямоугольник_506_копия" data-name="Прямоугольник 506 копия" class="cls-1" d="M272.015,30.307l17.677,17.678L288.278,49.4,270.6,31.721Z" transform="translate(-270.594 -29.594)"/>
+</svg>

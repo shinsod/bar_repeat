@@ -1,0 +1,209 @@
+/* .modal {
+    width: 1005px;
+    min-height: 480px;
+    padding: 75px 80px;
+    background-color:#171b1f;
+    &__close {
+    }
+
+    &__descr {
+    }
+
+    &__title {
+    }
+}
+
+.form-record{
+    margin-top: 75px;
+    width: 845px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    input{
+        width: 260px;
+        height: 75px;
+        padding: 0 39px;
+        border-radius: 6px;
+        border: 1px solid #e5cd8e;
+        background-color: #303535;
+        color: #ffffff;
+        
+    }
+} */
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: "color 9999s ease-out, background-color 9999s ease-out";
+    transition-delay: 9999s;
+}
+
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    /* visibility: hidden; */
+    padding-top: 160px;
+    z-index: 20;
+    background-color:rgba(0, 0, 0 , 0.5);
+} 
+.modal {
+    /* margin: 0 auto; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    width: 1005px;
+    min-height: 480px;
+    padding: 75px 80px;
+    background-color:#171b1f;
+    z-index: 25;
+
+ 	&__close {
+        position: absolute;
+        color:$color_text;
+        right: 33px;
+        top: 14px;
+        font-size: 44px;
+        cursor: pointer;
+
+	}
+
+	&__descr {
+        font-size: 30px;
+        font-weight: 600;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 0.7;
+        color:$color_text;
+	}
+
+	&__title {
+        font-size: 72px;
+        font-weight: 900;
+        line-height: 1.04;
+        color:#fff;
+        margin-top: 40px;
+        &_mini{
+            font-size: 65px;
+        }
+	} 
+    &_mini{
+        min-height: 350px;
+        width: 750px;
+    }
+    &__policy{
+        margin-top: 30px;
+        display: flex;
+        align-items: center;
+        a{
+            font-size: 12px;
+            font-weight: 500;
+            line-height: normal;
+            color: #a8a8a8;
+            margin-left: 9px;
+            text-decoration: none;
+        }
+        .labs{
+            margin: 0;
+            .checkbox{
+                display: none;
+            }
+            .fake{
+                position: relative;
+                display: inline-block;
+                border-radius: 2px;
+                background-color: #303535;
+                width: 15px;
+                height: 15px;
+            }
+            .fake::before{
+                content:"";
+                position: absolute;
+                display: block;
+                background-image: url(../icons/check/check.png);
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 9px;
+                height: 7px;
+                opacity: 0;
+                transition: .5s;
+            }
+        }
+        .checkbox:checked + .fake::before{
+            opacity: 1;
+        }
+    }
+}
+.form-record {
+    margin-top: 75px;
+    width: 845px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+	&__input {
+        position: relative;
+        background: #303535 !important; 
+        ::placeholder{
+            color:#fff;
+            font-size: 12px;
+            font-weight: 500;
+            line-height: 1.5;
+        }
+        input{
+            width: 260px;
+            height: 75px;
+            padding: 0 39px;
+            border-radius: 6px;
+            border: 1px solid #e5cd8e;
+            color: #fff;
+            background: linear-gradient(to right,#e5cd8e 0,#e5cd8e 11%,transparent 8%,transparent 41%,#e5cd8e 40%,#e5cd8e 100%);
+            background-size: 100% 1px,100% 1px,1px 100%,1px 100%;
+            background-position: 0 0,0 100%,0 0,100% 0;
+            background-repeat: no-repeat;
+            border-top: none;
+            
+        }
+        label{
+            position: absolute;
+            display: block;
+            padding: 0 8px;
+            height: 14px;
+            background-color:none;
+            font-size: 12px;
+            color:#848586;
+            left: 30px;
+            top: -6px;
+
+        }
+        &_num{
+            input{
+                width: 260px;
+                height: 75px;
+                padding: 0 39px;
+                border-radius: 6px;
+                border: 1px solid #e5cd8e;
+                color: #fff;
+                background: linear-gradient(to right,#e5cd8e 0,#e5cd8e 11%,transparent 8%,transparent 59%,#e5cd8e 40%,#e5cd8e 100%);
+                background-size: 100% 1px,100% 1px,1px 100%,1px 100%;
+                background-position: 0 0,0 100%,0 0,100% 0;
+                background-repeat: no-repeat;
+                border-top: none;
+            }
+            
+        }
+	}
+/* 	&__btn {
+	} */
+}
+
+#consultation , #thanks{
+    display: none;
+}
+

@@ -11,7 +11,25 @@
     }
 
     .header {
-
+        &__humburger{
+            width: 30px;
+            height: 35px;
+            display: flex;
+            flex-direction: column;
+            justify-content:space-between ;
+            span{
+                width: 26px;
+                height: 2px;
+                background-color: $color_text;
+            }
+            span.small{
+                width: 16px;
+            }
+            span.long{
+                width: 21px;
+            }
+            display: none;
+        }
         &__logo {
             display: flex;
             flex-direction: row;
@@ -20,7 +38,7 @@
 
             &-img {
                 width: 54px;
-                height: 54px;
+                height: 100%;
                 object-fit: contain;
             }
 
@@ -149,6 +167,7 @@
                 align-items: center;
                 .slick-track{
                     overflow: hidden;
+                    padding: 0 0.5px;
                 }
                 &-min {
                     position: absolute;
